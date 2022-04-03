@@ -36,5 +36,13 @@ def recommend():
         return render_template_string(json.dumps(x))
     return "KRIVO"
 
+
+@app.route('/predict', methods=['POST'])
+def recommend():
+    if request.method == "POST":
+        pass
+    return "NOT_IMPLEMENTED"
+
+
 if __name__ == '__main__':
     app.run(debug=True)
